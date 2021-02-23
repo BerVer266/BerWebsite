@@ -1,5 +1,4 @@
-{
-  "HDSDAPI:"var request = require('request')
+var request = require('request')
 var options = {
   'method': 'GET',
   'url': 'https://api.berver.tech/meme',
@@ -8,5 +7,4 @@ var options = {
 }
 request(options, function (error, response) {
 	if (error) throw new Error(error);
-  var a =JSON.parse(response.body).data;"
-  }
+  var a =JSON.parse(response.body).data;
